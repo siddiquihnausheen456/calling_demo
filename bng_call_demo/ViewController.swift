@@ -23,6 +23,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var dial5: UIButton!
     @IBOutlet weak var dial4: UIButton!
     @IBOutlet weak var calButton: UIButton!
+    @IBOutlet weak var clearText: UIButton!
     @IBOutlet weak var phoneNumberView: UITextView!
     
     var phoneNumber : String = ""
@@ -34,6 +35,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         phoneNumberView.textContainerInset = UIEdgeInsets(top: 120, left: 50, bottom: 50, right: 20)
+        phoneNumberView.textContainer.maximumNumberOfLines = 1
 
         
         dial0.createRoundButton()
@@ -48,6 +50,12 @@ class ViewController: UIViewController {
         dial9.createRoundButton()
         
         calButton.setImage(UIImage(named: "callButton"), for: .normal)
+        calButton.setTitle("", for: .normal)
+        calButton.layer.cornerRadius = 25
+        
+        clearText.setImage(UIImage(named: "backspace"), for: .normal)
+        clearText.setTitle("", for: .normal)
+        clearText.layer.cornerRadius = 25
         
         provider.setDelegate(self, queue: nil)
         let update = CXCallUpdate()
@@ -84,6 +92,12 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func clearTextAction(_ sender: Any) {
+        if phoneNumber != ""{
+            phoneNumber.removeLast()
+            phoneNumberView.text = phoneNumber
+        }
+    }
 }
 
 
@@ -111,7 +125,7 @@ extension UIButton{
         layer.cornerRadius = bounds.size.height/2
         layer.masksToBounds = true
         clipsToBounds = true
-        backgroundColor = .gray
+        backgroundColor = .lightGray
         tintColor = .black
     
     }

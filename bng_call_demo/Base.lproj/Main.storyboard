@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -34,37 +34,37 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qJH-ld-8I7">
                                         <rect key="frame" x="0.0" y="300" width="393" height="459"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="hcC-43-Z9t">
-                                                <rect key="frame" x="0.0" y="0.0" width="393" height="459"/>
+                                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="hcC-43-Z9t">
+                                                <rect key="frame" x="20" y="0.0" width="353" height="459"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="3aq-pc-RZq">
-                                                        <rect key="frame" x="0.0" y="0.0" width="393" height="103.66666666666667"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="3aq-pc-RZq">
+                                                        <rect key="frame" x="0.0" y="0.0" width="353" height="92.333333333333329"/>
                                                         <subviews>
                                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QdF-O8-ePv">
-                                                                <rect key="frame" x="0.0" y="0.0" width="121" height="103.66666666666667"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="97.666666666666671" height="92.333333333333329"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="1">
-                                                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="34"/>
+                                                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="42"/>
                                                                 </buttonConfiguration>
                                                                 <connections>
                                                                     <action selector="tapOnDialPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hu3-ha-isn"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQW-Gv-TNa">
-                                                                <rect key="frame" x="136" y="0.0" width="121" height="103.66666666666667"/>
+                                                                <rect key="frame" x="127.66666666666666" y="0.0" width="97.666666666666657" height="92.333333333333329"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="2">
-                                                                    <fontDescription key="titleFontDescription" type="system" pointSize="34"/>
+                                                                    <fontDescription key="titleFontDescription" type="system" pointSize="42"/>
                                                                 </buttonConfiguration>
                                                                 <connections>
                                                                     <action selector="tapOnDialPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uei-t3-kfx"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PVc-kj-ayI">
-                                                                <rect key="frame" x="272" y="0.0" width="121" height="103.66666666666667"/>
+                                                                <rect key="frame" x="255.33333333333329" y="0.0" width="97.666666666666657" height="92.333333333333329"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="3">
-                                                                    <fontDescription key="titleFontDescription" type="system" pointSize="34"/>
+                                                                    <fontDescription key="titleFontDescription" type="system" pointSize="42"/>
                                                                 </buttonConfiguration>
                                                                 <connections>
                                                                     <action selector="tapOnDialPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fkw-AF-Qch"/>
@@ -77,34 +77,34 @@
                                                             <constraint firstItem="QdF-O8-ePv" firstAttribute="top" secondItem="3aq-pc-RZq" secondAttribute="top" id="hSY-R0-0eo"/>
                                                         </constraints>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="HiK-ed-H5o">
-                                                        <rect key="frame" x="0.0" y="118.66666666666669" width="393" height="103.33333333333331"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="HiK-ed-H5o">
+                                                        <rect key="frame" x="0.0" y="122.33333333333331" width="353" height="92.333333333333314"/>
                                                         <subviews>
                                                             <button opaque="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bKH-K3-xlH">
-                                                                <rect key="frame" x="0.0" y="0.0" width="121" height="103.33333333333333"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="97.666666666666671" height="92.333333333333329"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="4">
-                                                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="34"/>
+                                                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="42"/>
                                                                 </buttonConfiguration>
                                                                 <connections>
                                                                     <action selector="tapOnDialPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wZe-kb-dVx"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e5F-Ep-lz4">
-                                                                <rect key="frame" x="136" y="0.0" width="121" height="103.33333333333333"/>
+                                                                <rect key="frame" x="127.66666666666666" y="0.0" width="97.666666666666657" height="92.333333333333329"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="5">
-                                                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="34"/>
+                                                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="42"/>
                                                                 </buttonConfiguration>
                                                                 <connections>
                                                                     <action selector="tapOnDialPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kZd-kh-4Go"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zT3-cu-DuB">
-                                                                <rect key="frame" x="272" y="0.0" width="121" height="103.33333333333333"/>
+                                                                <rect key="frame" x="255.33333333333329" y="0.0" width="97.666666666666657" height="92.333333333333329"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="6">
-                                                                    <fontDescription key="titleFontDescription" type="system" pointSize="34"/>
+                                                                    <fontDescription key="titleFontDescription" type="system" pointSize="42"/>
                                                                 </buttonConfiguration>
                                                                 <connections>
                                                                     <action selector="tapOnDialPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qiM-vD-fvh"/>
@@ -116,34 +116,34 @@
                                                             <constraint firstItem="e5F-Ep-lz4" firstAttribute="centerX" secondItem="HiK-ed-H5o" secondAttribute="centerX" id="kkX-J7-eKq"/>
                                                         </constraints>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="KcN-4G-D4H">
-                                                        <rect key="frame" x="0.0" y="236.99999999999997" width="393" height="103.66666666666666"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="KcN-4G-D4H">
+                                                        <rect key="frame" x="0.0" y="244.66666666666663" width="353" height="92"/>
                                                         <subviews>
                                                             <button opaque="NO" tag="7" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hu8-fN-kpg">
-                                                                <rect key="frame" x="0.0" y="0.0" width="121" height="103.66666666666667"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="97.666666666666671" height="92"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="7">
-                                                                    <fontDescription key="titleFontDescription" type="system" pointSize="34"/>
+                                                                    <fontDescription key="titleFontDescription" type="system" pointSize="42"/>
                                                                 </buttonConfiguration>
                                                                 <connections>
                                                                     <action selector="tapOnDialPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ufr-C1-qzn"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XTC-yH-f7L">
-                                                                <rect key="frame" x="136" y="0.0" width="121" height="103.66666666666667"/>
+                                                                <rect key="frame" x="127.66666666666666" y="0.0" width="97.666666666666657" height="92"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="8">
-                                                                    <fontDescription key="titleFontDescription" type="system" pointSize="34"/>
+                                                                    <fontDescription key="titleFontDescription" type="system" pointSize="42"/>
                                                                 </buttonConfiguration>
                                                                 <connections>
                                                                     <action selector="tapOnDialPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LNU-D9-SnM"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" tag="9" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJK-Rv-YLR">
-                                                                <rect key="frame" x="272" y="0.0" width="121" height="103.66666666666667"/>
+                                                                <rect key="frame" x="255.33333333333329" y="0.0" width="97.666666666666657" height="92"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="9">
-                                                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="34"/>
+                                                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="42"/>
                                                                 </buttonConfiguration>
                                                                 <connections>
                                                                     <action selector="tapOnDialPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dhT-GI-Wtg"/>
@@ -152,47 +152,73 @@
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="uMi-I0-9IL">
-                                                        <rect key="frame" x="0.0" y="355.66666666666663" width="393" height="103.33333333333331"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="dfY-17-bne">
+                                                        <rect key="frame" x="0.0" y="366.66666666666663" width="353" height="92.333333333333314"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JjA-vf-jB9">
-                                                                <rect key="frame" x="0.0" y="0.0" width="121" height="103.33333333333333"/>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hjO-ir-oZn">
+                                                                <rect key="frame" x="0.0" y="0.0" width="97.666666666666671" height="92.333333333333329"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o8i-4G-88Y">
+                                                                        <rect key="frame" x="9" y="6.3333333333333712" width="80" height="80"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="80" id="hxm-ur-hZC"/>
+                                                                            <constraint firstAttribute="height" constant="80" id="qAP-GC-Jm8"/>
+                                                                        </constraints>
+                                                                        <state key="normal" title="Button"/>
+                                                                        <buttonConfiguration key="configuration" style="plain"/>
+                                                                        <connections>
+                                                                            <action selector="calButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zeK-4b-BG5"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="50" id="axc-gC-CbG"/>
-                                                                    <constraint firstAttribute="height" constant="50" id="eWp-Ga-5bz"/>
+                                                                    <constraint firstItem="o8i-4G-88Y" firstAttribute="centerY" secondItem="hjO-ir-oZn" secondAttribute="centerY" id="5Pz-BD-WPz"/>
+                                                                    <constraint firstItem="o8i-4G-88Y" firstAttribute="centerX" secondItem="hjO-ir-oZn" secondAttribute="centerX" id="qqe-7Y-mvE"/>
                                                                 </constraints>
-                                                                <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain" image="callButton" title="Button"/>
-                                                                <connections>
-                                                                    <action selector="calButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aCM-pM-eot"/>
-                                                                </connections>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QRu-N2-NLK">
-                                                                <rect key="frame" x="136" y="0.0" width="121" height="103.33333333333333"/>
+                                                            </view>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6op-UP-j8O">
+                                                                <rect key="frame" x="127.66666666666666" y="0.0" width="97.666666666666657" height="92.333333333333329"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="0">
-                                                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="34"/>
+                                                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="42"/>
                                                                 </buttonConfiguration>
-                                                                <connections>
-                                                                    <action selector="tapOnDialPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aU4-5n-tIX"/>
-                                                                </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G6f-Wm-Wgs">
-                                                                <rect key="frame" x="272" y="0.0" width="121" height="103.33333333333333"/>
-                                                                <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                                            </button>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rvy-46-gBX">
+                                                                <rect key="frame" x="255.33333333333329" y="0.0" width="97.666666666666657" height="92.333333333333329"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OFi-3W-xdh">
+                                                                        <rect key="frame" x="9" y="6.3333333333333712" width="80" height="80"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="80" id="Yip-gW-VIC"/>
+                                                                            <constraint firstAttribute="width" constant="80" id="bvj-0t-3eg"/>
+                                                                        </constraints>
+                                                                        <state key="normal" title="Button"/>
+                                                                        <buttonConfiguration key="configuration" style="plain"/>
+                                                                        <connections>
+                                                                            <action selector="clearTextAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="COe-Gi-4ZZ"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="OFi-3W-xdh" firstAttribute="centerX" secondItem="rvy-46-gBX" secondAttribute="centerX" id="Noa-WH-Nho"/>
+                                                                    <constraint firstItem="OFi-3W-xdh" firstAttribute="centerY" secondItem="rvy-46-gBX" secondAttribute="centerY" id="fzu-DF-KXM"/>
+                                                                </constraints>
+                                                            </view>
                                                         </subviews>
-                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="bottom" secondItem="JjA-vf-jB9" secondAttribute="bottom" id="aGN-8P-Bxq"/>
-                                                        </constraints>
                                                     </stackView>
                                                 </subviews>
                                                 <constraints>
-                                                    <constraint firstAttribute="trailing" secondItem="3aq-pc-RZq" secondAttribute="trailing" id="255-c8-FA2"/>
-                                                    <constraint firstItem="3aq-pc-RZq" firstAttribute="leading" secondItem="hcC-43-Z9t" secondAttribute="leading" id="QOH-DW-diJ"/>
+                                                    <constraint firstItem="KcN-4G-D4H" firstAttribute="leading" secondItem="hcC-43-Z9t" secondAttribute="leading" id="3sa-eS-7uM"/>
+                                                    <constraint firstAttribute="trailing" secondItem="HiK-ed-H5o" secondAttribute="trailing" id="DiA-jE-5F2"/>
+                                                    <constraint firstItem="HiK-ed-H5o" firstAttribute="leading" secondItem="hcC-43-Z9t" secondAttribute="leading" id="KIB-0D-Rnm"/>
+                                                    <constraint firstAttribute="trailing" secondItem="dfY-17-bne" secondAttribute="trailing" id="UCV-Ws-plP"/>
+                                                    <constraint firstItem="3aq-pc-RZq" firstAttribute="leading" secondItem="hcC-43-Z9t" secondAttribute="leading" id="WOG-oM-g8S"/>
+                                                    <constraint firstAttribute="trailing" secondItem="3aq-pc-RZq" secondAttribute="trailing" id="YuX-zU-kfB"/>
                                                     <constraint firstItem="3aq-pc-RZq" firstAttribute="top" secondItem="hcC-43-Z9t" secondAttribute="top" id="fJh-go-2EI"/>
+                                                    <constraint firstItem="dfY-17-bne" firstAttribute="leading" secondItem="hcC-43-Z9t" secondAttribute="leading" id="fU2-YG-xrn"/>
+                                                    <constraint firstAttribute="trailing" secondItem="KcN-4G-D4H" secondAttribute="trailing" id="r1r-Au-MQt"/>
                                                 </constraints>
                                             </stackView>
                                         </subviews>
@@ -200,8 +226,8 @@
                                         <constraints>
                                             <constraint firstItem="hcC-43-Z9t" firstAttribute="top" secondItem="qJH-ld-8I7" secondAttribute="top" id="1Sm-6g-9bv"/>
                                             <constraint firstAttribute="bottom" secondItem="hcC-43-Z9t" secondAttribute="bottom" id="JCu-kZ-1Ud"/>
-                                            <constraint firstAttribute="trailing" secondItem="hcC-43-Z9t" secondAttribute="trailing" id="Xze-Ml-C4R"/>
-                                            <constraint firstItem="hcC-43-Z9t" firstAttribute="leading" secondItem="qJH-ld-8I7" secondAttribute="leading" id="r90-dq-4X5"/>
+                                            <constraint firstAttribute="trailing" secondItem="hcC-43-Z9t" secondAttribute="trailing" constant="20" id="Xze-Ml-C4R"/>
+                                            <constraint firstItem="hcC-43-Z9t" firstAttribute="leading" secondItem="qJH-ld-8I7" secondAttribute="leading" constant="20" id="r90-dq-4X5"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -226,8 +252,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="calButton" destination="JjA-vf-jB9" id="6ms-8a-aSM"/>
-                        <outlet property="dial0" destination="QRu-N2-NLK" id="yCo-eN-8fK"/>
+                        <outlet property="calButton" destination="o8i-4G-88Y" id="q8d-4k-YLt"/>
+                        <outlet property="clearText" destination="OFi-3W-xdh" id="lSU-to-M9Z"/>
+                        <outlet property="dial0" destination="6op-UP-j8O" id="Hid-cp-r48"/>
                         <outlet property="dial1" destination="QdF-O8-ePv" id="qMP-va-zNM"/>
                         <outlet property="dial2" destination="GQW-Gv-TNa" id="RpS-1c-Qv0"/>
                         <outlet property="dial3" destination="PVc-kj-ayI" id="u56-qv-IpI"/>
@@ -246,7 +273,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="callButton" width="170.66667175292969" height="170.66667175292969"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
