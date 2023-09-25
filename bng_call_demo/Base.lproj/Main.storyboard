@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="bng_call_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oOc-Go-90U">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="bottom" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uVM-P5-bXM">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="300"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="300" id="FQ5-Fn-WBZ"/>
+                                        </constraints>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <dataDetectorType key="dataDetectorTypes" phoneNumber="YES"/>
+                                    </textView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qJH-ld-8I7">
+                                        <rect key="frame" x="0.0" y="300" width="393" height="459"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="hcC-43-Z9t">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="459"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="3aq-pc-RZq">
+                                                        <rect key="frame" x="0.0" y="0.0" width="393" height="103.66666666666667"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QdF-O8-ePv">
+                                                                <rect key="frame" x="0.0" y="0.0" width="121" height="103.66666666666667"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="1">
+                                                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="34"/>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="tapOnDialPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hu3-ha-isn"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQW-Gv-TNa">
+                                                                <rect key="frame" x="136" y="0.0" width="121" height="103.66666666666667"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="2">
+                                                                    <fontDescription key="titleFontDescription" type="system" pointSize="34"/>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="tapOnDialPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uei-t3-kfx"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PVc-kj-ayI">
+                                                                <rect key="frame" x="272" y="0.0" width="121" height="103.66666666666667"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="3">
+                                                                    <fontDescription key="titleFontDescription" type="system" pointSize="34"/>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="tapOnDialPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fkw-AF-Qch"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="QdF-O8-ePv" secondAttribute="bottom" id="Zdt-T6-Fiq"/>
+                                                            <constraint firstItem="QdF-O8-ePv" firstAttribute="top" secondItem="3aq-pc-RZq" secondAttribute="top" id="hSY-R0-0eo"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="HiK-ed-H5o">
+                                                        <rect key="frame" x="0.0" y="118.66666666666669" width="393" height="103.33333333333331"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bKH-K3-xlH">
+                                                                <rect key="frame" x="0.0" y="0.0" width="121" height="103.33333333333333"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="4">
+                                                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="34"/>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="tapOnDialPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wZe-kb-dVx"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e5F-Ep-lz4">
+                                                                <rect key="frame" x="136" y="0.0" width="121" height="103.33333333333333"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="5">
+                                                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="34"/>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="tapOnDialPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kZd-kh-4Go"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zT3-cu-DuB">
+                                                                <rect key="frame" x="272" y="0.0" width="121" height="103.33333333333333"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="6">
+                                                                    <fontDescription key="titleFontDescription" type="system" pointSize="34"/>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="tapOnDialPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qiM-vD-fvh"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="e5F-Ep-lz4" firstAttribute="centerX" secondItem="HiK-ed-H5o" secondAttribute="centerX" id="kkX-J7-eKq"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="KcN-4G-D4H">
+                                                        <rect key="frame" x="0.0" y="236.99999999999997" width="393" height="103.66666666666666"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="7" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hu8-fN-kpg">
+                                                                <rect key="frame" x="0.0" y="0.0" width="121" height="103.66666666666667"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="7">
+                                                                    <fontDescription key="titleFontDescription" type="system" pointSize="34"/>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="tapOnDialPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ufr-C1-qzn"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XTC-yH-f7L">
+                                                                <rect key="frame" x="136" y="0.0" width="121" height="103.66666666666667"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="8">
+                                                                    <fontDescription key="titleFontDescription" type="system" pointSize="34"/>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="tapOnDialPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LNU-D9-SnM"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="9" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJK-Rv-YLR">
+                                                                <rect key="frame" x="272" y="0.0" width="121" height="103.66666666666667"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="9">
+                                                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="34"/>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="tapOnDialPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dhT-GI-Wtg"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="uMi-I0-9IL">
+                                                        <rect key="frame" x="0.0" y="355.66666666666663" width="393" height="103.33333333333331"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JjA-vf-jB9">
+                                                                <rect key="frame" x="0.0" y="0.0" width="121" height="103.33333333333333"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="50" id="axc-gC-CbG"/>
+                                                                    <constraint firstAttribute="height" constant="50" id="eWp-Ga-5bz"/>
+                                                                </constraints>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" image="callButton" title="Button"/>
+                                                                <connections>
+                                                                    <action selector="calButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aCM-pM-eot"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QRu-N2-NLK">
+                                                                <rect key="frame" x="136" y="0.0" width="121" height="103.33333333333333"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="0">
+                                                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="34"/>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="tapOnDialPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aU4-5n-tIX"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G6f-Wm-Wgs">
+                                                                <rect key="frame" x="272" y="0.0" width="121" height="103.33333333333333"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="JjA-vf-jB9" secondAttribute="bottom" id="aGN-8P-Bxq"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="3aq-pc-RZq" secondAttribute="trailing" id="255-c8-FA2"/>
+                                                    <constraint firstItem="3aq-pc-RZq" firstAttribute="leading" secondItem="hcC-43-Z9t" secondAttribute="leading" id="QOH-DW-diJ"/>
+                                                    <constraint firstItem="3aq-pc-RZq" firstAttribute="top" secondItem="hcC-43-Z9t" secondAttribute="top" id="fJh-go-2EI"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="hcC-43-Z9t" firstAttribute="top" secondItem="qJH-ld-8I7" secondAttribute="top" id="1Sm-6g-9bv"/>
+                                            <constraint firstAttribute="bottom" secondItem="hcC-43-Z9t" secondAttribute="bottom" id="JCu-kZ-1Ud"/>
+                                            <constraint firstAttribute="trailing" secondItem="hcC-43-Z9t" secondAttribute="trailing" id="Xze-Ml-C4R"/>
+                                            <constraint firstItem="hcC-43-Z9t" firstAttribute="leading" secondItem="qJH-ld-8I7" secondAttribute="leading" id="r90-dq-4X5"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="qJH-ld-8I7" firstAttribute="top" secondItem="uVM-P5-bXM" secondAttribute="bottom" id="8eP-zK-GuS"/>
+                                    <constraint firstItem="uVM-P5-bXM" firstAttribute="leading" secondItem="oOc-Go-90U" secondAttribute="leading" id="KEo-kY-Dc3"/>
+                                    <constraint firstAttribute="trailing" secondItem="qJH-ld-8I7" secondAttribute="trailing" id="Lhb-NW-ifQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="qJH-ld-8I7" secondAttribute="bottom" id="Mmy-E1-4ta"/>
+                                    <constraint firstItem="uVM-P5-bXM" firstAttribute="top" secondItem="oOc-Go-90U" secondAttribute="top" id="Uww-bN-aWs"/>
+                                    <constraint firstItem="qJH-ld-8I7" firstAttribute="leading" secondItem="oOc-Go-90U" secondAttribute="leading" id="pdx-Yj-dyM"/>
+                                    <constraint firstAttribute="trailing" secondItem="uVM-P5-bXM" secondAttribute="trailing" id="qOy-b5-EYV"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="oOc-Go-90U" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="6ew-W6-4Bf"/>
+                            <constraint firstItem="oOc-Go-90U" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Fdb-Ke-JAb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oOc-Go-90U" secondAttribute="bottom" id="PU4-zs-h5G"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oOc-Go-90U" secondAttribute="trailing" id="n3i-kv-g9k"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="calButton" destination="JjA-vf-jB9" id="6ms-8a-aSM"/>
+                        <outlet property="dial0" destination="QRu-N2-NLK" id="yCo-eN-8fK"/>
+                        <outlet property="dial1" destination="QdF-O8-ePv" id="qMP-va-zNM"/>
+                        <outlet property="dial2" destination="GQW-Gv-TNa" id="RpS-1c-Qv0"/>
+                        <outlet property="dial3" destination="PVc-kj-ayI" id="u56-qv-IpI"/>
+                        <outlet property="dial4" destination="bKH-K3-xlH" id="AsO-Fg-gUG"/>
+                        <outlet property="dial5" destination="e5F-Ep-lz4" id="NHv-K1-zUh"/>
+                        <outlet property="dial6" destination="zT3-cu-DuB" id="SyO-Fc-5Cf"/>
+                        <outlet property="dial7" destination="Hu8-fN-kpg" id="gmu-TN-rql"/>
+                        <outlet property="dial8" destination="XTC-yH-f7L" id="MbM-W1-IOv"/>
+                        <outlet property="dial9" destination="JJK-Rv-YLR" id="U4k-dM-T0D"/>
+                        <outlet property="phoneNumberView" destination="uVM-P5-bXM" id="elF-ft-45K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="42" y="-144"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="callButton" width="170.66667175292969" height="170.66667175292969"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
